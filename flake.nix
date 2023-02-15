@@ -1,5 +1,5 @@
 {
-  description = "wreq-it";
+  description = "wreq-it ralfs all over your internet";
 
   inputs = {
     # Nix Inputs
