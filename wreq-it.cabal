@@ -74,10 +74,11 @@ library
   -- Other library packages from which modules are imported.
   build-depends:
     , aeson
-    , base        ^>=4.14
+    , base           ^>=4.14
     , bytestring
     , containers
     , lens
+    , lens-tutorial
     , wreq
 
   -- Directories containing source files.
