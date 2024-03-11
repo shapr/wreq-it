@@ -3,7 +3,7 @@
 
   inputs = {
     # Nix Inputs
-    nixpkgs.url = github:nixos/nixpkgs/?ref=nixos-22.11;
+    nixpkgs.url = github:nixos/nixpkgs/?ref=nixos-23.11;
     flake-utils.url = github:numtide/flake-utils;
     hs-flake-utils.url = "git+https://whetstone.private.storage/jcalderone/hs-flake-utils.git?ref=main";
     hs-flake-utils.inputs.nixpkgs.follows = "nixpkgs";
@@ -16,7 +16,7 @@
     hs-flake-utils,
   }: let
     ulib = flake-utils.lib;
-    ghcVersion = "ghc8107";
+    ghcVersion = "ghc96";
   in
     ulib.eachSystem ["x86_64-linux" "aarch64-darwin"] (system: let
       # Get a nixpkgs customized for this system

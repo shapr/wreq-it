@@ -74,7 +74,7 @@ library
   -- Other library packages from which modules are imported.
   build-depends:
     , aeson
-    , base           ^>=4.14
+    , base           >=4.14
     , bytestring
     , containers
     , lens
@@ -102,7 +102,7 @@ executable wreq-it
 
   -- Other library packages from which modules are imported.
   build-depends:
-    , base     ^>=4.14
+    , base     >=4.14
     , wreq-it
 
   -- Directories containing source files.
@@ -135,5 +135,5 @@ test-suite wreq-it-test
 
   -- Test dependencies.
   build-depends:
-    , base     ^>=4.14
+    , base     >=4.14
     , wreq-it
